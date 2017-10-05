@@ -1,0 +1,196 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+.menu{
+    background-color: #111;
+    z-index: 2;
+    opacity: .75;
+    padding: 60px 30px 10px 60px;
+    color: gray;
+}
+
+.text {
+  color: white;
+  text-align: center;
+}
+
+.resume {
+  top-margin: 1000px;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  background-image: url("BG.jpg");
+  opacity: 0.75;
+}
+
+h1 {
+  margin: auto;
+  border: solid;
+  border-width: 30px;
+  color:#0E467B;
+  width: 560px;
+  border-radius: 10px;
+}
+body img{
+  filter: sepia(50%);
+}
+
+.bold {
+  font-weight: bold;
+}
+.projectlink{
+  display: block;
+  padding: 50px 50px;
+  height: 100px;
+  border: 3px;
+  border-radius: 16px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: white;
+  text-decoration-line: none;
+  text-decoration: blink;
+  background-color: #A5E5FA;
+  border: solid;
+  border-radius: 16px;
+  border-color: white;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+.projectlink:hover {
+  color:navy;
+  background-color: white;
+}
+.toggle{
+  text-align: center;
+}
+.projects{
+  text-align: center;
+  background-color: pink;
+  margin-left: 1px;
+}
+
+
+p {
+  max-width: 600px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60 px;
+}
+
+li{
+  border: solid;
+  border-radius: 16px;
+  border-color: white;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+
+li a {
+  display: block;
+  padding: 50px 50px;
+  height: 100px;
+  border: 3px;
+  border-radius: 16px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: white;
+  text-decoration-line: none;
+  text-decoration: blink;
+  background-color: #A5E5FA;
+}
+
+li a:hover {
+  color:navy;
+  background-color: white;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+  width: 100000px;
+  height: 350px;
+  background: url("https://www.selfrelianceny.org/assets/img/sub-footer.png") no-repeat 
+
+}
+
+.city {
+  position:absolute;
+  z-index: 1;
+
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
